@@ -105,7 +105,6 @@ nav ul{
 
 .link:hover {
   	border-top: 4px solid #0065FC;
-  	padding: auto 0;
   	cursor: pointer;
 	color:#0065FC;
 	
@@ -188,10 +187,13 @@ a:link {
 	text-align:center;
 }
 
+@media screen and (min-width: 800px) {
+
 .btn-search2 {
 
-	display:none;
+	display: none;
 
+	}
 }
 
 .btn-search:hover {
@@ -221,7 +223,7 @@ h1 {
 	
 }
 
-#FiltreSearch {
+.FiltreSearch {
 	
 	display: flex;
 	align-items: center;
@@ -256,7 +258,7 @@ h1 {
 	
 }
 
-#FiltreSearch span {
+.FiltreSearch span {
 	
 	display: inline-block;
 	background-color: transparent;
@@ -267,7 +269,7 @@ h1 {
 	
 }
 
-#FiltreSearch:hover, #FiltreSearch span:hover {
+.FiltreSearch:hover, .FiltreSearch span:hover {
 	
 	
 	background-color:#DEEBFF;
@@ -317,6 +319,9 @@ h2 {
   
 }
 
+
+/* Section du milieu - Hebergement */
+
 h3 {
 	
 	font-weight:bold;
@@ -331,6 +336,8 @@ h3 .fa-chart-line{
 
 }
 
+
+
 #SectionMidl {
 	
 	column-gap:5px;
@@ -340,16 +347,6 @@ h3 .fa-chart-line{
 
 }
 
-#SectionMidl div {
-	
-	
-	
-}
-
-#SectionMidl figure {
-
-
-}
 
 
 #FullMiddle {
@@ -376,11 +373,6 @@ h3 .fa-chart-line{
 .cards-hebergement {
 
 	margin:0px;
-	
-}
-
-.cards-hebergement figure {
-
 	display:grid;
 	border-radius: 10px;
 	text-align: left;
@@ -394,7 +386,7 @@ h3 .fa-chart-line{
 
 }
 
-.cards-hebergement figure img {
+.cards-hebergement img {
 
 	width:250px;
 	max-height:120px;
@@ -403,11 +395,9 @@ h3 .fa-chart-line{
 
 }
 
-.cards-hebergement {
+.titre-hebergement {
 
-
-	padding: 0.2em;
-
+    font-weight: bold;
 
 }
 
@@ -417,52 +407,59 @@ h3 .fa-chart-line{
 	float:right;
 }
 
-#cards-hebergement-aside {
+.cards-hebergement-aside {
 	
 	text-align: left;
 	background-color:white;
 	border-radius:10px;
 	padding:0.2rem;
-	margin-left:50px;
-	margin-right:50px;
-	margin-top:-10px;
-	max-height: 150px;
+	margin: 10px 50px auto 50px;
+	max-height: 140px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-template-rows: 20px 20px 20px;
+	grid-template-areas: "img titre""img titre""img prix""img etoile";
+		
 	
 }
 
-#cards-hebergement-aside img{
+.cards-hebergement-aside img{
 	
 	float:left;
-	height: 150px;
-	width: 40%;
+	height: 100%;
+	width: 100%;
 	border-radius: 10px 0px 0px 10px;
 	object-fit: cover;
+	grid-area:img;
 	
 	
 }
 
-#cards-hebergement-aside figcaption{
-	
-	font-weight:bold;
-	text-align:center;
-	padding-left:50px;
-	padding-top:5px
-}
 
-#cards-hebergement-aside div{
-	
-	text-align:center;
-	margin-left:10px;
-	
-}
-
-#cards-hebergement-aside .etoile {
+.cards-hebergement-aside .etoile {
 	
 	margin-top:30px;
+	grid-area:etoile;
 	
 	
 	
+}
+
+
+.prix-aside{
+
+
+	display:grid;
+	grid-area:prix;
+
+}
+
+.titre-hebergement-aside{
+	
+	font-weight:bold;
+
+
 }
 
 .etoile[data-active="true"] {
@@ -547,7 +544,7 @@ h4 {
 	
 	display:grid;
 	grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 200px 20px 200px;
+  	grid-template-rows: 200px 20px 200px;
 	column-gap: 2rem;
 	margin-top: 20px;
 	margin-bottom:50px;
@@ -578,9 +575,9 @@ h4 {
 	
 	position: relative;
 	object-fit: cover;
-  min-height:100%;
+  	min-height:100%;
 	width:100%;
-  overflow: hidden;
+  	overflow: hidden;
 	border-radius:20px 20px 0px 0px;
 }
 
@@ -785,7 +782,7 @@ h4 {
 }
 
 
-article:hover {
+.cards-hebergement-aside:hover, figure:hover, .cards-hebergement:hover {
      	transform:scale(1.1);
 }
 
