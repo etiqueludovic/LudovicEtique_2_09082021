@@ -20,37 +20,76 @@ html {
 	
 }
 
+/* Logo et menu */
 
-#menu {
+#logo {
 	
-	float:right;
+	margin:20px 10px 40px 0px;
+	padding: 0 2rem;
+	height: 55px;
+	
+
+}
+
+#nav-bar {
+	
+	display:grid;
+	justify-content:center;
+	grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	grid-template-areas: "logo . link1 link2 link3";
+	
 	
 }
 
+.log {
+	color:#0065FC;
+}
 
-#menu a {
-
+#nav-bar .link, #nav-bar .log {
 	
-	float:left;
-	justify-content: flex-end;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	
+	
+}
+
+nav a {
+
 	padding: 20px 20px 0px 0px;
 	padding-left:0px;
 	font-size:1.1em;
 	font-weight: 200;
+	padding-top:25px;
+	padding-left:50px;
 	
 
 }
 
-#menu ul {
+nav ul{
 	
 	list-style: none;
-	display: inline-flex;
-	align-items: baseline;
+	display: grid;
+	justify-content: center;
 }
 
-header span{
+#link1 {
 
-		margin-top: 20px;
+	grid-area:link1;
+	
+}
+
+#link2 {
+	
+	grid-area:link2;
+
+
+}
+
+#link3 {
+
+	grid-area:link3;
 
 }
 
@@ -58,38 +97,27 @@ header span{
 
 .link {
   
-  transition: 0.3s;
-  cursor:pointer ;
+  	transition: 0.3s;
+  	cursor:pointer;
+	color:black;
   
 }
 
 .link:hover {
-  border-top: 4px solid #0065FC;
-  padding: 0px 0;
-  cursor: pointer;
-
-}
-
-a:link 
-{ 
- text-decoration:none; 
-}
-
-#logo {
-	
-	margin:40px;
-	padding: 0 2rem;
-	height: 55px;
+  	border-top: 4px solid #0065FC;
+  	padding: auto 0;
+  	cursor: pointer;
+	color:#0065FC;
 	
 
 }
 
-#logo, #menu {
-
-	display:inline-block;
-
+a:link { 
+ 	text-decoration:none; 
 }
 
+
+/* Section Recherche */
 
 #search-btn {
 	
@@ -160,6 +188,12 @@ a:link
 	text-align:center;
 }
 
+.btn-search2 {
+
+	display:none;
+
+}
+
 .btn-search:hover {
 	
 	
@@ -168,19 +202,15 @@ a:link
 	
 }
 
-#filtre, h1 {
-	
-	display: inline-block;
-	
+
+#filtre {
+    display: flex;
+    align-items: center;
+    margin: 1rem;
 }
 
-#filtre{
-	
-	display:flex;
-	align-items:center;
-	margin:1rem;
-	
-	
+#filtre div {
+    display: inline-flex;
 }
 
 h1 {
@@ -229,7 +259,7 @@ h1 {
 #FiltreSearch span {
 	
 	display: inline-block;
-	background-color: white;
+	background-color: transparent;
 	padding:1rem;
 	cursor: pointer;
 	font-weight: bold;
@@ -756,7 +786,7 @@ h4 {
 
 
 article:hover {
-     transform:scale(1.1);
+     	transform:scale(1.1);
 }
 
 
