@@ -198,6 +198,15 @@ a:link {
 	text-align:center;
 }
 
+@media screen and (min-width: 800px) {
+
+.btn-search2.fas.fa-search {
+
+	display: none;
+
+	}
+}
+
 .btn-search:hover {
 	
 	
