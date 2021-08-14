@@ -526,10 +526,11 @@ h4 {
 
 #SectionFullCards {
 
-	display: flex;
-	flex-direction: column;
-	row-gap: 1.5rem;
-	width: 500px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 0.5rem;
+	row-gap: 0.5rem;
+	margin: 0px 10px 10px auto;
 
 }
 
