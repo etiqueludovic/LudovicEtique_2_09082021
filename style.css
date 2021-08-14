@@ -44,6 +44,7 @@ html {
 
 .log {
 	color:#0065FC;
+	font-weight: bold;
 }
 
 #nav-bar .link, #nav-bar .log {
