@@ -53,7 +53,6 @@ html {
 	justify-content: center;
 	flex-direction: column;
 	border-top: 4px solid transparent;
-	widht:100%;
 	
 	
 }
@@ -168,10 +167,6 @@ a:link {
 
 .icone-search {
 	
-	border-right: none;
-	border-left: none;
-	border-top: #F2F2F2 1px solid;
-	border-bottom: #F2F2F2 1px solid;
 	background-color: #F2F2F2;
 	color:black;
 	padding: 10px 10px 10px 10px;
