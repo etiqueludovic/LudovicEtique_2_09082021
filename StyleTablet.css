@@ -61,12 +61,16 @@ html {
 #link1 {
 
 	grid-area:link1;
+	border-top: 4px solid transparent;
+	padding-bottom:25px;
 	
 }
 
 #link2 {
 	
 	grid-area:link2;
+	border-bottom: 4px solid transparent;
+	padding-bottom:25px;
 
 
 }
@@ -99,19 +103,22 @@ nav ul{
 .link {
   
   	transition: 0.3s;
-  	cursor:pointer;
 	color:black;
   
 }
 
 .link:hover {
-  	border-bottom: 4px solid #0065FC;
-  	padding: auto 0;
-  	cursor: pointer;
+
 	color:#0065FC;
-	display:flex;
-	flex-direction:column-reverse;
-	width:100%;
+
+}
+
+#link1:hover, #link2:hover {
+
+  	border-bottom: 4px solid #0065FC;
+	color:#0065FC;
+	padding-bottom:25px;
+	
 
 }
 

@@ -24,7 +24,7 @@ html {
 
 #logo {
 	
-	margin:40px;
+	margin:30px;
 	padding: 0 2rem;
 	height: 55px;
 	
@@ -34,7 +34,6 @@ html {
 #nav-bar {
 	
 	display:grid;
-	justify-content:center;
 	align-items:center;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
@@ -49,25 +48,21 @@ html {
 	font-weight:bold;
 }
 
-#nav-bar #link {
-	
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	
-	
-}
+
 
 #link1 {
 
 	grid-area:link1;
+	border-top: 4px solid transparent;
+	padding-bottom:25px;
 	
 }
 
 #link2 {
 	
 	grid-area:link2;
+	border-bottom: 4px solid transparent;
+	padding-bottom:25px;
 
 
 }
@@ -80,12 +75,9 @@ html {
 
 nav a {
 
-	padding: 20px 20px 0px 0px;
-	padding-left:0px;
 	font-size:1.1em;
 	font-weight: 200;
-	padding-top:25px;
-	padding-left:50px;
+	
 	
 
 }
@@ -100,17 +92,22 @@ nav ul{
 .link {
   
   	transition: 0.3s;
-  	cursor:pointer;
 	color:black;
   
 }
 
 .link:hover {
-  	border-bottom: 4px solid #0065FC;
-  	cursor: pointer;
+
 	color:#0065FC;
-	display:flex;
-	flex-direction:column-reverse;
+
+}
+
+#link1:hover, #link2:hover {
+
+  	border-bottom: 4px solid #0065FC;
+	color:#0065FC;
+	padding-bottom:25px;
+	
 
 }
 
