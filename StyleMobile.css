@@ -667,12 +667,12 @@ h4 {
 	width:100%;
 	margin-top:1rem;
 	display: inline-flex;
+	flex-direction: column;
 
 }
 
 #FooterFull a {
 
-	Padding: 10px;
 	text-decoration: none;
 	color: black;
 }
