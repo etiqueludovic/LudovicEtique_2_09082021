@@ -734,8 +734,9 @@ h4 {
 }
 
 
-article:hover {
+.cards-hebergement-aside:hover, figure:hover, .cards-hebergement:hover {
      	transform:scale(1.1);
+	cursor:pointer;
 }
 
 
