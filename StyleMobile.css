@@ -432,7 +432,8 @@ h3 .fa-chart-line{
 	grid-template-columns: 40% 55%;
 	grid-template-rows: 20px 20px 20px;
 	grid-template-areas: "img titre""img titre""img prix""img etoile";
-	column-gap: 1rem;	
+	column-gap: 1rem;
+	cursor:pointer;
 	
 }
 
@@ -565,6 +566,7 @@ h3 .fa-chart-line{
 	padding-bottom:10px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	border-radius:0px 0px 20px 20px;
+	cursor:pointer;
 }
 
 #cards1-activites {
