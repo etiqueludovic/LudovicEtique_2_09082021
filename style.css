@@ -1,45 +1,33 @@
 /* Toute la page */
 
-
 * {
-	
 	padding:0;
 	margin:0;
-	font-family:Raleway, sans-serif;
-	
+	font-family:Raleway, sans-serif;	
 }
 
 /* Page Web */
 
 html {
-	
 	font-size: 17px;
 	max-width:1500px;
 	margin:auto;
-	
-	
 }
 
 /* Logo et menu */
 
 #logo {
-	
 	margin:20px 10px 40px 0px;
 	padding: 0 2rem;
 	height: 55px;
-	
-
 }
 
 #nav-bar {
-	
 	display:grid;
 	justify-content:center;
 	grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
 	grid-template-rows: 1fr;
-	grid-template-areas: "logo . link1 link2 link3";
-	
-	
+	grid-template-areas: "logo . link1 link2 link3";	
 }
 
 .log {
@@ -48,72 +36,49 @@ html {
 }
 
 #nav-bar .link, #nav-bar .log {
-	
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	border-top: 4px solid transparent;
-	
-	
+	border-top: 4px solid transparent;	
 }
 
 nav a {
-
 	font-size:1.1em;
-	padding-top:25px;
-	
-
+	padding-top:25px;	
 }
 
 nav ul{
-	
 	list-style: none;
 	display: grid;
 	justify-content: center;
 }
 
 #link1 {
-
 	grid-area:link1;
-	border-top: 4px solid transparent;
-	
+	border-top: 4px solid transparent;	
 }
 
 #link2 {
-	
 	grid-area:link2;
 	border-top: 4px solid transparent;
-
-
 }
 
 #link3 {
-
 	grid-area:link3;
-
 }
 
-
-
 .link {
-  
   	transition: 0.3s;
 	color:black;
-  
 }
 
 .link:hover {
-
 	color:#0065FC;
-
 }
 
 #link1:hover, #link2:hover {
-
   	border-top: 4px solid #0065FC;
 	color:#0065FC;
-	
-
 }
 
 a:link { 
@@ -123,35 +88,23 @@ a:link {
 
 /* Section Recherche */
 
-#search-btn {
-	
+#search-btn {	
 	display: inline-flex;
 	max-width:100%;
-	margin:10px;
-	
+	margin:10px;	
 }
 
-
-
 .fas {
-	
 	font-size:0.7rem;
 	color:#f2f2f2;
 	font-family: "Font Awesome 5 Free";
 }
 
-
-
 #sectionSearch {
-
 	margin:10px;
-	
-
-
 }
 
 #recherche {
-	
 	border-right: none;
 	border-left: none;
 	border-top: #F2F2F2 1px solid;
@@ -161,12 +114,10 @@ a:link {
 	width: 15rem;
 	font-size: 1rem;
 	font-weight: bold;
-	height:auto;
-	
+	height:auto;	
 }
 
 .icone-search {
-	
 	background-color: #F2F2F2;
 	color:black;
 	padding: 10px 10px 10px 10px;
@@ -175,7 +126,6 @@ a:link {
 }
 
 .btn-search {
-	
 	background-color: #0065FC;
 	color: white;
 	font-weight: bold;
@@ -189,22 +139,15 @@ a:link {
 }
 
 @media screen and (min-width: 800px) {
-
 .btn-search2.fas.fa-search {
-
 	display: none;
-
 	}
 }
 
-.btn-search:hover {
-	
-	
+.btn-search:hover {	
 	background-color:#DEEBFF;
-	transition-duration: 0.5s;
-	
+	transition-duration: 0.5s;	
 }
-
 
 #filtre {
     display: flex;
@@ -217,15 +160,11 @@ a:link {
 }
 
 h1 {
-	
 	font-size:20px;
-	font-weight:bold;
-	
-	
+	font-weight:bold;	
 }
 
 .FiltreSearch {
-	
 	display: flex;
 	align-items: center;
 	margin-right: 2rem;
@@ -234,11 +173,9 @@ h1 {
 	margin-bottom: 1rem;
 	cursor: pointer;
 	font-weight: bold
-	
 }
 
 .icone-filtre {
-	
 	background-color: #DEEBFF;
 	border-radius: 100%;
 	min-height: 3.5rem;
@@ -247,41 +184,30 @@ h1 {
 	align-items: center;
 	justify-content: center;
 	margin: -2px;
-	text-align:center;
-	
+	text-align:center;	
 }
 
 .icone-filtre2 {
-	
 	padding:0.5rem;
 	color: blue;
 	font-size:20px;
-	
 }
 
-.FiltreSearch span {
-	
+.FiltreSearch span {	
 	display: inline-block;
 	background-color: transparent;
 	padding:1rem;
 	cursor: pointer;
 	font-weight: bold;
 	border-radius:2rem;
-	
 }
 
 .FiltreSearch:hover, .FiltreSearch span:hover {
-	
-	
 	background-color:#DEEBFF;
 	transition-duration: 0.5s;
-	
 }
 
-
-
 .rond {
-	
 	height: 2rem;
 	width: 2rem;
 	min-height: 2rem;
@@ -292,87 +218,62 @@ h1 {
 	align-items: center;
 	justify-content: center;
 	margin-right: 1rem;
-	
 }
 
 .icone-info {
-	
 	padding:0.5rem;
 	padding-left:14px;
 	color: blue;
 	font-size:20px;
-	margin-right:10px;
-	
+	margin-right:10px;	
 }
 
 .rond, .text-info {
-	
-	display: inline-block;
-	
-	
+	display: inline-block;	
 }
 
 h2 {
-  
 	margin-right:20px;
 	font-size:17px;
-	font-weight:bold;
-  
+	font-weight:bold; 
 }
-
 
 /* Section du milieu - Hebergement */
 
 h3 {
-	
 	font-weight:bold;
 	padding:20px 10px 0px 20px;
 	display: inline;
 }
 
 h3 .fa-chart-line{
-
 	font-size: 20px;
 	margin-right: 50px;
-
 }
 
-
-
 #SectionMidl {
-	
 	column-gap:5px;
 	background-color:#F2F2F2;
 	border-radius:10px;
 	padding:1rem;
-
 }
 
-
-
 #FullMiddle {
-	
 	width:1500px;
 	height:600px;
 	display: flex;
-	column-gap: 1.5rem;
-	
-	
+	column-gap: 1.5rem;	
 }
 
 .hebergement-cards{ 
-
 	display: grid;
 	column-gap: 2rem;
 	row-gap:1rem;
 	grid-template-columns: 6fr 3fr;
 	grid-template-columns: repeat(3, 1fr);
-	
-
 }
 
 .cards-hebergement {
-
 	margin:0px;
 	display:grid;
 	border-radius: 10px;
@@ -384,32 +285,25 @@ h3 .fa-chart-line{
 	padding:0.5rem 0.5rem 0rem 0.5rem;
 	height:100%;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
 }
 
 .cards-hebergement img {
-
 	width:250px;
 	max-height:120px;
 	border-radius: 10px 10px 0 0;
 	object-fit: cover;
-
 }
 
 .titre-hebergement {
-
     font-weight: bold;
-
 }
 
 .chart {
-	
 	color:black;
 	float:right;
 }
 
 .cards-hebergement-aside {
-	
 	text-align: left;
 	background-color:white;
 	border-radius:10px;
@@ -423,127 +317,82 @@ h3 .fa-chart-line{
 	grid-template-areas: "img titre""img titre""img prix""img etoile";
 	column-gap: 1rem;
 	cursor:pointer;
-	
 }
 
 .cards-hebergement-aside img{
-	
 	float:left;
 	height: 100%;
 	width: 100%;
 	border-radius: 10px 0px 0px 10px;
 	object-fit: cover;
-	grid-area:img;
-	
-	
+	grid-area:img;	
 }
 
 
-.cards-hebergement-aside .etoile {
-	
+.cards-hebergement-aside .etoile {	
 	margin-top:30px;
-	grid-area:etoile;
-	
-	
-	
+	grid-area:etoile;	
 }
 
 
 .prix-aside{
-
-
 	display:grid;
 	grid-area:prix;
-
 }
 
-.titre-hebergement-aside{
-	
+.titre-hebergement-aside{	
 	font-weight:bold;
-
-
 }
 
-.etoile[data-active="true"] {
-	
-	color: #0065FC;
-	
+.etoile[data-active="true"] {	
+	color: #0065FC;	
 }
 
-.etoile[data-active="false"] {
-	
-	color: #F2F2F2;
-	
+.etoile[data-active="false"] {	
+	color: #F2F2F2;	
 }
 
 .plus {
-
 	text-decoration: none;
 	font-weight: bold;
 	margin-top: 3rem;
 	padding-left:15px ;
 	color: black;
 	float: left;
-
-
 }
 
-
-
-
 h4 {
-	
 	font-weight:bold;
 	padding:10px;
-	
 }
 
 #SectionRight {
-
 	display:flex;
 	flex-direction: column;
 	row-gap: 1rem;
 	grid-template-rows: auto repeat(3, 1fr);
 	border-radius: 20px;
 	background-color:#F2F2F2;
-	
-
 }
 
 #SectionFullCards {
-
 	display: flex;
 	flex-direction: column;
 	row-gap: 1.5rem;
 	width: 500px;
-
 }
 
-
-
-
-
-
-
 #SectionMidl, aside {
-	
 	display: inline-block;
-	
-	
 }
 
 #FullActivites {
-
-
 	margin-top: 20px;
 	padding-bottom: 10px;
-
-
 }
 
 
 #activites {
-	
 	display:grid;
 	grid-template-columns: repeat(4, 1fr);
   	grid-template-rows: 200px 20px 200px;
@@ -554,7 +403,6 @@ h4 {
 }
 
 #activites figcaption{
-	
 	font-weight:bold;
 	padding-left:30px;
 	padding-top:10px;
@@ -564,7 +412,6 @@ h4 {
 }
 
 #cards1-activites {
-	
 	display:grid;
 	grid-column-start: 1;
 	grid-column-end: 1;
@@ -574,7 +421,6 @@ h4 {
 }
 
 #cards1-activites img{
-	
 	position: relative;
 	object-fit: cover;
   	min-height:100%;
@@ -584,7 +430,6 @@ h4 {
 }
 
 #cards2-activites {
-	
 	display:grid;
 	max-height: 250px;
 	width:100%;
@@ -596,7 +441,6 @@ h4 {
 }
 
 #cards2-activites figure{
-	
 	display:grid;
 	max-height: 250px;
 	width:100%;
@@ -608,9 +452,7 @@ h4 {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-
 #cards2-activites img{
-	
 	height:100%;
 	width:100%;
 	border-radius:20px 20px 0px 0px;
@@ -618,7 +460,6 @@ h4 {
 }
 
 #cards3-activites {
-	
 	display: grid;
 	max-height: 100px;
 	border-radius: 20px;
@@ -628,16 +469,14 @@ h4 {
 	margin-top: 50px;
 }
 
-#cards3-activites img{
-	
+#cards3-activites img{	
 	max-height:150px;
 	width: 100%;
 	border-radius:20px 20px 0px 0px;
 	object-fit: cover;
 	
 }
-#cards4-activites {
-	
+#cards4-activites {	
 	display:grid;
 	min-height:400px;
 	width:100%;
@@ -647,16 +486,16 @@ h4 {
 	grid-row-end: 4;
 	border-radius:20px;
 }
+
 #cards4-activites img{
-	
   	min-height:100%;
 	width:100%;
   	object-fit: cover;
 	border-radius:20px 20px 0px 0px;
 	
 }
+
 #cards5-activites {
-	
 	display:grid;
 	height:80%;
 	width:100%;
@@ -669,7 +508,6 @@ h4 {
 }
 
 #cards5-activites figure{
-	
 	display:grid;
 	max-height: 75%;
 	width:100%;
@@ -682,9 +520,7 @@ h4 {
 
 }
 
-
 #cards5-activites img{
-	
 	max-height:100%;
 	width:100%;
 	border-radius:20px 20px 0px 0px;
@@ -692,9 +528,7 @@ h4 {
 	
 }
 
-
 #cards6-activites {
-	
 	display:grid;
 	height:250px;
 	width:100%;
@@ -707,7 +541,6 @@ h4 {
 }
 
 #cards6-activites figure{
-	
 	display:grid;
 	max-height: 240px;
 	width:100%;
@@ -720,7 +553,6 @@ h4 {
 }
 
 #cards6-activites img{
-	
 	height:100%;
 	width:100%;
 	border-radius:10px;
@@ -730,7 +562,6 @@ h4 {
 }
 
 #FooterFull { 
-
 	background-color:#F2F2F2;
 	width:100%;
 	margin-top:1rem;
@@ -739,15 +570,12 @@ h4 {
 }
 
 #FooterFull a {
-
 	Padding: 10px;
 	text-decoration: none;
 	color: black;
 }
 
-
 #F1 {
-
 	display: flex;
 	flex-direction: column;
 	margin-left:10px;
@@ -756,7 +584,6 @@ h4 {
 }
 
 #F1 div, #F2 div, #F3 div{
-	
 	display: flex;
 	flex-direction: column;
 	padding:20px;
@@ -766,29 +593,19 @@ h4 {
 }
 
 #F2 {
-
 	display: flex;
 	flex-direction: column;
 	margin-left:13%;
 	padding:1rem;
 }
-
-
 
 #F3 {
-
 	display: flex;
 	flex-direction: column;
 	margin-left:13%;
 	padding:1rem;
 }
-
-
 .cards-hebergement-aside:hover, figure:hover, .cards-hebergement:hover {
      	transform:scale(1.1);
 	cursor:pointer;
 }
-
-
-
-
