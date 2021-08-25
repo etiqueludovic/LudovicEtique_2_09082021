@@ -570,7 +570,6 @@ h4 {
 	padding:1rem;
 }
 
-
 .cards-hebergement-aside:hover, figure:hover, .cards-hebergement:hover {
     transform:scale(1.1);
 	cursor:pointer;
@@ -624,7 +623,7 @@ html    {
 #filtres-icone {
 			flex-wrap: wrap;
 			display: flex;
-	}
+		}
 
 /* Milieu tablette */
 
@@ -745,7 +744,7 @@ html    {
 		
 #cards6-activites figure {
 			margin:0;
-}
+		}
 
 }
 /* Mobile */
@@ -808,7 +807,7 @@ html    {
 #filtres-icone {
 			flex-wrap: wrap;
 			display: flex;
-	}
+		}
 
 /* Milieu mobile */
 
@@ -927,11 +926,8 @@ html    {
 		
 #cards6-activites figure {
 			margin:0;
-}
+		}
 			
-			
-			
-
 #FooterFull {
 			background-color:#F2F2F2;
 			width:100%;
@@ -955,8 +951,6 @@ html    {
 			margin-top: 10px;
 			margin-left:10px;
 		}
-
-
 
 #F3 	{
 			display: flex;
